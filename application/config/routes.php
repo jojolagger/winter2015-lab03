@@ -40,6 +40,14 @@
 
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
+//lets point things where we want them to point
+$route['sleep'] = "first/zzz";
+$route['lock/(:any)'] = "welcome/shucks";
+$route['show/(:num)'] = "first/gimme/$1";
+$route['dunno'] = "guess";
+$route['(....)/bingo'] = "bingo";
+$route['comp([0-9]+)/wisdom'] = "bingo/wisdom";
+
 
 
 /* End of file routes.php */
